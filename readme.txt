@@ -1,4 +1,6 @@
-The Apache Milagro Cryptographic Library
+See https://github.com/Keeper-Security/amcl/branch/keeper/README-Keeper.md for Keeper-related documentation.
+
+# The Apache Milagro Cryptographic Library
 
 AMCL is a multi-lingual Cryptographic library that supports elliptic 
 curve cryptography, pairing-friendly curve cryptography, RSA, AES symmetric 
