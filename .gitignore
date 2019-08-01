@@ -1,2 +1,4 @@
 /target/
 /bin/
+**/java/amcl/
+**/swift/amcl/
