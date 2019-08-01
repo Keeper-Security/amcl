@@ -14,6 +14,7 @@ We have created the `keeper` branch from the master branch.  We will probably br
       release_1.0.0                    -- a version used by some clients
       release_2.0.0                    -- a version used by some clients
 ```
+Inside AMCL we use the `version3` library.
 
 See the https://github.com/Keeper-Security/keeper-pythia-client project for the actual library versions you should use.
 
