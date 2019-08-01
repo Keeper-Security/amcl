@@ -2,6 +2,9 @@ import os
 import subprocess
 import sys
 
+target="-target x86_64-apple-ios12.2-simulator "
+sysroot="-Fsystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk "
+
 deltext=""
 slashtext=""
 copytext=""
@@ -56,7 +59,7 @@ def rsaset(tb,nb,base,ml) :
 
 	replace(fpath+"config_ff.swift","@ML@",ml)
 
-	run_in_shell("swiftc -DD64 "+fpath+"*.swift -L. -lamcl -I. -O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name "+tb)
+	run_in_shell("swiftc -DD64 "+fpath+"*.swift -L. -lamcl -I. " + target + sysroot + "-O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name "+tb)
 	run_in_shell(deltext+fpath+"*.*")
 	run_in_shell("rmdir amcl"+slashtext+tb)
 
@@ -142,7 +145,8 @@ def curveset(tc,nb,base,nbt,m8,mt,ct,pf,stw,sx,ab,cs) :
 		run_in_shell(copytext+"ecdh.swift "+fpath+"ecdh.swift")
 
 
-	run_in_shell("swiftc -DD64 "+fpath+"*.swift -L. -lamcl -I. -O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name "+tc)
+	run_in_shell("swiftc amcl"+slashtext+"*.swift " + target + sysroot + "-O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name amcl")
+	run_in_shell("swiftc -DD64 "+fpath+"*.swift -L. -lamcl -I. " + target + sysroot + "-O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name "+tc)
 	run_in_shell(deltext+fpath+"*.*")
 	run_in_shell("rmdir amcl"+slashtext+tc)
 
@@ -155,7 +159,7 @@ run_in_shell(copytext+ "aes.swift amcl"+slashtext+".")
 run_in_shell(copytext+ "gcm.swift amcl"+slashtext+".")
 run_in_shell(copytext+ "nhs.swift amcl"+slashtext+".")
 
-run_in_shell("swiftc amcl"+slashtext+"*.swift -O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name amcl")
+# run_in_shell("swiftc amcl"+slashtext+"*.swift " + target + sysroot + "-O -Ounchecked -whole-module-optimization -emit-library -emit-module -module-name amcl")
 
 print("Elliptic Curves")
 print("1. ed25519")
