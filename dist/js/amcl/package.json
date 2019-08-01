@@ -1,0 +1,46 @@
+{
+  "_from": "@chainsafe/amcl",
+  "_id": "@chainsafe/amcl@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-XzVLRxAqkkFeLA9T3ro1gn8llV3y6FIN38bRgmp5HvOJyfBprotKa6973J7BL7X566R6uztoNweK8ng40G08tw==",
+  "_location": "/@chainsafe/amcl",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@chainsafe/amcl",
+    "name": "@chainsafe/amcl",
+    "escapedName": "@chainsafe%2famcl",
+    "scope": "@chainsafe",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@chainsafe/amcl/-/amcl-0.1.0.tgz",
+  "_shasum": "8a49445402561e3dcf9d536b78e2dc225b159b22",
+  "_spec": "@chainsafe/amcl",
+  "_where": "/Users/mhewett/sw/repos/pythia-client/explore",
+  "author": {
+    "name": "ChainSafe Systems"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "The Apache Milagro Cryptographic Library in Javascript",
+  "devDependencies": {},
+  "files": [
+    "*.js",
+    "*.ts"
+  ],
+  "license": "Apache-2.0",
+  "main": "ctx.js",
+  "name": "@chainsafe/amcl",
+  "private": false,
+  "scripts": {},
+  "types": "ctx.d.ts",
+  "version": "0.1.0"
+}
