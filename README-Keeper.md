@@ -19,6 +19,7 @@ Inside AMCL we use the `version3` library.
 See the https://github.com/Keeper-Security/keeper-pythia-client project for the actual library versions you should use.
 
 To pull changes from our `master` branch into our `keeper` branch, run:
+
 ```
 $ git checkout master
 $ git pull
