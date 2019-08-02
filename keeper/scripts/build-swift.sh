@@ -14,7 +14,14 @@ echo "Removing old files in ${DEST}"
 rm -rf ${DEST}/* >/dev/null
 
 (
-cd version3/$LNG
+    cd version3/$LNG
+
+    # Remove old target directory
+    if [ -d amcl ]
+    then
+        rm -rf amcl
+    fi
+    
 
 python3 ${KS_DIR}/config64.py <<END_OF_INPUT
 21
