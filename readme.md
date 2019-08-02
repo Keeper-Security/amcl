@@ -1,4 +1,4 @@
-See https://github.com/Keeper-Security/amcl/branch/keeper/README-Keeper.md for Keeper-related documentation.
+See https://github.com/Keeper-Security/amcl/blob/keeper/README-Keeper.md for Keeper-related documentation.
 
 # The Apache Milagro Cryptographic Library
 
