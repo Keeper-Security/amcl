@@ -2,6 +2,15 @@
 set -o errexit -o nounset -o pipefail
 command -v shellcheck > /dev/null && shellcheck "$0"
 
+LNG=java
+
+# Create the destination directory
+DEST=$PWD/dist/$LNG/amcl
+mkdir -p ${DEST}
+
+echo "Removing old files in ${DEST}"
+rm -rf ${DEST}/* >/dev/null
+
 (
 cd version3/java
 
@@ -15,18 +24,15 @@ mvn clean install
 )
 
 echo "Done building Java version of AMCL."
-# Delete old version
-echo "Removing existing files in dist/java"
-rm dist/java/*.jar > /dev/null
 
-echo "Checking for new amcl-3.*.jar"
+echo "Checking for new amcl*.jar"
 JAR_FILE=`find . -name 'amcl*.jar'`
 
-echo "Copying ${JAR_FILE} to the dist/java folder"
+echo "Copying ${JAR_FILE} to ${DEST}"
 if [ -f "${JAR_FILE}" ]
 then
-    cp ${JAR_FILE} dist/java/
+cp ${JAR_FILE} ${DEST}/
 fi
 
-echo "ls -l dist/java: "
-ls -l dist/java
+echo "ls -l ${DEST}: "
+ls -l ${DEST}

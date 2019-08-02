@@ -13,7 +13,7 @@ mkdir -p ${DEST}
 KS_DIR=$PWD/keeper/$LNG
 
 echo "Removing old files in ${DEST}"
-rm ${DEST}/* >/dev/null
+rm -rf ${DEST}/* >/dev/null
 
 (
 cd version3/$LNG
