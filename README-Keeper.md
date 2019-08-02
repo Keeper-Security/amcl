@@ -68,7 +68,8 @@ $ bash keeper/scripts/build-js.sh
 ### Swift
 
 ```
-foo
+$ bash keeper/scripts/build-swift.sh
+
 ```
 
 
