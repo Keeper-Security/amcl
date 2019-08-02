@@ -1,4 +1,4 @@
 /target/
 /bin/
-**/java/amcl/
-**/swift/amcl/
+/version3/**/java/amcl/
+/version3/**/swift/amcl/
