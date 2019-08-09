@@ -10,14 +10,14 @@ public typealias Chunk = Int64
 
 
 public struct CONFIG_BIG{
-    static let MODBYTES:UInt = 48
+    static public let MODBYTES:UInt = 48
 #if D32
-	static public let CHUNK:Int=32
-    static let BASEBITS:UInt = 58    
+    static public let CHUNK:Int=32
+    static public let BASEBITS:UInt = 58    
 #endif
 #if D64
     static public let CHUNK:Int=64
-    static let BASEBITS:UInt = 58    
+    static public let BASEBITS:UInt = 58    
 #endif  
 
     static let NLEN:Int=Int(1+((8*CONFIG_BIG.MODBYTES-1)/CONFIG_BIG.BASEBITS))
