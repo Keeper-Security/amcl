@@ -11,6 +11,12 @@ mkdir -p ${DEST}
 echo "Removing old files in ${DEST}"
 rm -rf ${DEST}/* >/dev/null
 
+echo "Finding all *.jar files"
+find . -name '*.jar'
+
+echo "Removing all *.jar files in the build tree"
+find . -name '*.jar' -delete
+
 (
 cd version3/java
 
@@ -19,7 +25,13 @@ python3 config64.py <<END_OF_INPUT
 0
 END_OF_INPUT
 
+echo ""
+echo ""
+echo "Selected option 21"
+
 cd amcl
+echo ""
+echo "mvn clean install"
 mvn clean install
 )
 
