@@ -34,16 +34,28 @@ The `master` branch is often updated by the main AMCL developers.  To pull chang
 Then, on your machine, run:
 
 ```
+$ git checkout master
 $ git pull https://github.com/miracl/amcl master
 ```
 
 After resolving any merge conflicts push the changes to the master branch of our fork.
 
 ```
+$ git add ...
+$ git commit -m "Update from amcl project <date>"
+$ git push
 $ git push
 ```
 
 After testing, merge changes into the 'keeper' branch as described above.
+
+```
+$ git checkout master
+$ git pull
+$ git checkout keeper
+$ git merge master
+$ git push
+``` 
 
 ## Building
 
