@@ -66,7 +66,7 @@ To rebuild all clients, run `bash keeper/scripts/build-all.sh`.
 Run this command in the root directory of this project. 
  
 ```
-$ bash keeper-scripts/build-java.sh
+$ bash keeper/scripts/build-java.sh
 ```
 
 The output will be a jar file in `$AMCL/dist/java`.  Copy that file to the `keeper-pythia-client` project for testing and deployment.
