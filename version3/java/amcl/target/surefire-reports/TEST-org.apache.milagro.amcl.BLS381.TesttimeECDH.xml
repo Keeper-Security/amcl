@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.apache.milagro.amcl.BLS381.TesttimeECDH" time="9.957" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.apache.milagro.amcl.BLS381.TesttimeECDH" time="10.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Users/mhewett/.sdkman/candidates/java/8.0.201-oracle/jre/lib"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14.5"/>
+    <property name="os.version" value="10.14.6"/>
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.1/libexec/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/mhewett"/>
@@ -64,5 +64,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.apache.milagro.amcl.BLS381.TesttimeECDH" name="testtimeECDH" time="9.957"/>
+  <testcase classname="org.apache.milagro.amcl.BLS381.TesttimeECDH" name="testtimeECDH" time="10.003"/>
 </testsuite>
