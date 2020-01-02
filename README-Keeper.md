@@ -57,6 +57,8 @@ $ git merge master
 $ git push
 ``` 
 
+After that you probably want to make a new release branch from the `keeper` branch.
+
 ## Building
 
 To rebuild all clients, run `bash keeper/scripts/build-all.sh`.
