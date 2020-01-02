@@ -1,0 +1,5 @@
+org/apache/milagro/amcl/BLS381/TestBLS.class
+org/apache/milagro/amcl/BLS381/TestMPIN.class
+org/apache/milagro/amcl/BLS381/TesttimeECDH.class
+org/apache/milagro/amcl/BLS381/TestECDH.class
+org/apache/milagro/amcl/BLS381/TesttimeMPIN.class
