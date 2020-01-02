@@ -4,6 +4,13 @@ See https://github.com/Keeper-Security/amcl/blob/keeper/README-Keeper.md for Kee
 
 [![Build Status](https://travis-ci.org/miracl/amcl.svg?branch=master)](https://travis-ci.org/miracl/amcl)
 
+
+IMPORTANT NOTICE. Further active development of this library will now take place
+at https://github.com/miracl/core. It is not intended to add any new features
+to this version, although it will continue to be maintained for bug fixes.
+
+---------------------------------------
+
 AMCL is a multi-lingual Cryptographic library that supports elliptic
 curve cryptography, pairing-friendly curve cryptography, RSA, AES symmetric
 encryption and hash functions. All code is entirely in the supported high-
@@ -69,3 +76,14 @@ that critical calculations are performed in constant time. This strongly
 mitigates against side-channel attacks. Exception-free formulae are
 now used for Weierstrass elliptic curves. A new standardised script
 builds for the same set of curves across all languages.
+
+---------------------------------------------
+
+# Contributors
+
+The following people have contributed to the AMCL library
+
+- Mike Scott
+- Kealan McCusker
+- Alessandro Budroni
+- Samuele Andreoli

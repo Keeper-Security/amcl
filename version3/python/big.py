@@ -104,7 +104,7 @@ def sqrtmodp(a, p):
         return pow(a, (p + 1) // 4, p)
 
     if p % 8 == 5:
-        b = (p - 5) / 8
+        b = (p - 5) // 8
         i = a * 2
         v = pow(i, b, p)
         i = modmul(i, v, p)
@@ -121,8 +121,8 @@ def sqrtmodp(a, p):
 
 
 def crt(rp, p, rq, q):
-    c = inverse(p, q)
-    t = modmult(c, rq - rp, q)
+    c = invmodp(p, q)
+    t = modmul(c, rq - rp, q)
     return t * p + rp
 
 # find jacobi symbol for (x/p). Only defined for
